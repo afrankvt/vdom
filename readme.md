@@ -12,7 +12,7 @@ v1 := VElem("h1") {
 elem := VDom.render(v1)
 
 // generate a new vdom tree
-v1 := VElem("h1") {
+v2 := VElem("h1") {
   it->style = "color: red"
   it.text   = "Hello, World"
 }
