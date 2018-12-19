@@ -14,9 +14,9 @@ class Build : build::BuildPod
       "proj.uri":     "https://github.com/afrankvt/vdom",
       "license.name": "MIT",
       "vcs.name":     "Git",
-      "vcs.uri":      "https://github.com/afrankvt/vdom"
+      "vcs.uri":      "https://github.com/afrankvt/vdom",
       "repo.public":  "true",
-      "repo.tags":    "web"
+      "repo.tags":    "web",
     ]
     depends = ["sys 1.0", "web 1.0", "dom 1.0"]
     srcDirs = [`fan/`]
