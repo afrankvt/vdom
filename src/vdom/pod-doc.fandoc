@@ -1,0 +1,23 @@
+Overview [#overview]
+********************
+
+The 'vdom' pod provides a virtual DOM API for Fantom designed to be used
+with the core 'dom' pod library:
+
+  // create vdom tree
+  v1 := VElem("h1") {
+    it->style = "color: blue"
+    it.text   = "Hello, World"
+  }
+
+  // initial render to DOM node
+  elem := VDom.render(v1)
+
+  // generate a new vdom tree
+  v2 := VElem("h1") {
+    it->style = "color: red"
+    it.text   = "Hello, World"
+  }
+
+  // patch existing DOM with changes
+  VDom.patch(elem, v2)
